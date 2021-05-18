@@ -5,12 +5,10 @@ import theme from './styles/theme'
 
 const App = () => {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <ThemeProvider theme={theme}>
-        <h1>Hello</h1>
-      </ThemeProvider>
-    </>
+      <h1>Hello</h1>
+    </ThemeProvider>
   )
 }
 
