@@ -1,6 +1,38 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, css } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+        url('/fonts/montserrat-v15-latin-300.woff2') format('woff2')
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('/fonts/montserrat-v15-latin-regular.woff2') format('woff2')
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url('/fonts/montserrat-v15-latin-600.woff2') format('woff2')
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('/fonts/montserrat-v15-latin-700.woff2') format('woff2')
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -14,18 +46,21 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  html {
-    font-size: 62.5%;
-  }
+  ${({ theme }) => css`
+    html {
+      font-size: 62.5%;
+    }
 
-  html, body {
-    height: 100vh;
-  }
+    html,
+    body {
+      height: 100vh;
+    }
 
-  body {
-    font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
+    body {
+      font-family: ${theme.font.family};
+      font-size: ${theme.font.sizes.medium};
+    }
+  `}
 `
 
 export default GlobalStyles
