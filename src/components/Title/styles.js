@@ -11,9 +11,9 @@ const titleModifiers = {
 }
 
 export const Title = styled.h1`
-  ${({ theme, size }) => css`
+  ${({ theme, size, color }) => css`
     font-weight: ${theme.font.extraBold};
-    color: ${theme.colors.primary};
+    color: ${theme.colors[color]};
 
     ${!!size && titleModifiers[size](theme)}
   `}
