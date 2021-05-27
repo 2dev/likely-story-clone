@@ -1,7 +1,11 @@
 import * as S from './styles'
 
-const Title = ({ size = 'huge', children }) => {
-  return <S.Title size={size}>{children}</S.Title>
+const Title = ({ children, size = 'huge', color = 'primary' }) => {
+  return (
+    <S.Title size={size} color={color}>
+      {children}
+    </S.Title>
+  )
 }
 
 export default Title
