@@ -60,11 +60,11 @@ const GlobalStyles = createGlobalStyle`
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.medium};
       *::selection {
-        background: ${theme.colors.darkBg};
+        background: ${theme.colors.dark};
         color: ${theme.colors.white};
       }
       *::-moz-selection {
-        background: ${theme.colors.darkBg};
+        background: ${theme.colors.dark};
         color: ${theme.colors.white};
       }
     }

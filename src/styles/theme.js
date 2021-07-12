@@ -23,10 +23,10 @@ export default {
   colors: {
     primary: '#fc589f',
     secondary: '#5214ff',
-    yellowBg: '#fce03d',
-    orangeBg: '#ffbc42',
-    pinkLightBg: '#f7d4d5',
-    darkBg: '#141221',
+    yellowNormal: '#fce03d',
+    orangeNormal: '#ffbc42',
+    pinkLight: '#f7d4d5',
+    dark: '#141221',
     white: '#FFFFFF',
   },
   spacings: {
