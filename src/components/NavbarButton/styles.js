@@ -11,8 +11,6 @@ export const Text = styled.span`
     font-size: ${theme.font.sizes.medium};
     font-weight: ${theme.font.bold};
     z-index: ${theme.layers.base};
-    width: 85px;
-    height: 85px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,6 +32,7 @@ export const Bubble = styled.div`
     background: ${theme.colors[backgroundColorHover]};
     border-radius: 50%;
     overflow: hidden;
+    pointer-events: none;
     opacity: 0;
     z-index: -1;
 
