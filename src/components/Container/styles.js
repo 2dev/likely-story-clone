@@ -25,6 +25,9 @@ export const Wrapper = styled.div`
     margin: 0 auto;
     padding: 8rem;
 
+    display: flex;
+    height: inherit;
+
     ${wrapperModifiers[modifier] && wrapperModifiers[modifier]()};
   `}
 `
