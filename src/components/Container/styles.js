@@ -1,5 +1,11 @@
 import styled, { css } from 'styled-components'
 
+const containerModifiers = {
+  fullHeight: () => css`
+    height: 100vh;
+  `,
+}
+
 const wrapperModifiers = {
   footer: () => css`
     padding: 4rem 8rem;
@@ -7,8 +13,9 @@ const wrapperModifiers = {
 }
 
 export const Container = styled.div`
-  ${({ backgroundColor, theme }) => css`
+  ${({ backgroundColor, fullHeight, theme }) => css`
     background-color: ${theme.colors[backgroundColor]};
+    ${fullHeight && containerModifiers.fullHeight()};
   `}
 `
 
