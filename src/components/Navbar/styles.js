@@ -1,8 +1,11 @@
 import styled, { css } from 'styled-components'
 
 export const Container = styled.nav`
-  position: fixed;
-  width: 100%;
+  ${({ theme }) => css`
+    position: fixed;
+    width: 100%;
+    z-index: ${theme.layers.menu};
+  `}
 `
 
 export const Wrapper = styled.div`
@@ -13,8 +16,6 @@ export const Wrapper = styled.div`
 
     max-height: 10rem;
     max-width: ${theme.grid.container};
-
-    z-index: ${theme.layers.menu};
 
     margin: 0 auto;
     padding: 8rem;

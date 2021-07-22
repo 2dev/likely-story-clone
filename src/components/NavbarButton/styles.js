@@ -6,11 +6,11 @@ export const Wrapper = styled.div`
 
 export const Text = styled.span`
   ${({ theme, textColor, textColorHover }) => css`
-    color: ${theme.colors[textColor]};
     cursor: pointer;
+    color: ${theme.colors[textColor]};
     font-size: ${theme.font.sizes.medium};
     font-weight: ${theme.font.bold};
-    z-index: ${theme.layers.base};
+
     display: flex;
     align-items: center;
     justify-content: center;
