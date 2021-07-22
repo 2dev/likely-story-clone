@@ -27,6 +27,7 @@ export const Wrapper = styled.div`
 
     display: flex;
     height: inherit;
+    overflow: hidden;
 
     ${wrapperModifiers[modifier] && wrapperModifiers[modifier]()};
   `}
