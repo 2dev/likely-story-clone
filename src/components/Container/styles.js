@@ -16,6 +16,7 @@ export const Container = styled.div`
   ${({ backgroundColor, fullHeight, theme }) => css`
     background-color: ${theme.colors[backgroundColor]};
     ${fullHeight && containerModifiers.fullHeight()};
+    overflow: hidden;
   `}
 `
 
@@ -27,7 +28,6 @@ export const Wrapper = styled.div`
 
     display: flex;
     height: inherit;
-    overflow: hidden;
 
     ${wrapperModifiers[modifier] && wrapperModifiers[modifier]()};
   `}
