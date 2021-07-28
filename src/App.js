@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import SectionHero from './components/SectionHero'
 import SectionSmallStudio from './components/SectionSmallStudio'
 import theme from './styles/theme'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Navbar />
       <SectionHero />
       <SectionSmallStudio />
+      <Footer />
     </ThemeProvider>
   )
 }
