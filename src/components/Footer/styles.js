@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-// import SocialMedia from '../SocialMedia'
 
 export const Wrapper = styled.div`
   display: flex;
