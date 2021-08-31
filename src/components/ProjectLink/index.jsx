@@ -6,7 +6,7 @@ import Title from '../Title'
 const ProjectLink = ({ preHeader, title, subtitle, color = 'white' }) => {
   return (
     <S.Wrapper>
-      <S.PreHeader color={color} content={preHeader}>
+      <S.PreHeader color={color}>
         <S.PreHeaderText color={color}>{preHeader}</S.PreHeaderText>
       </S.PreHeader>
       <Title size="xxlarge" color={color}>
